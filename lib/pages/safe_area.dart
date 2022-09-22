@@ -27,6 +27,13 @@ class SafeAreaPage extends StatelessWidget {
           ),
         ],
       ),
+      // AppBarを使用していないのでページ戻るボタンを実装
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(Icons.arrow_back),
+      ),
     );
   }
 }
