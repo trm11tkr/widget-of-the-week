@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/home_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
+import 'package:widget_of_the_week/pages/wrap_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -17,6 +18,7 @@ class App extends StatelessWidget {
       routes: {
         SafeAreaPage.routeName: (context) => const SafeAreaPage(),
         ExpandedPage.routeName: (context) => const ExpandedPage(),
+        WrapPage.routeName: (context) => const WrapPage(),
       },
     );
   }
