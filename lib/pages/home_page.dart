@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
     return AppScaffold(
       title: 'Home',
       child: ListView(
+        reverse: true,
         children: const [
           AppListTile(title: 'SafeArea', nextRouteName: SafeAreaPage.routeName),
           AppListTile(title: 'Expanded', nextRouteName: ExpandedPage.routeName),
