@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
+import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
@@ -20,6 +21,10 @@ class HomePage extends StatelessWidget {
           AppListTile(title: 'Expanded', nextRouteName: ExpandedPage.routeName),
           AppListTile(title: 'Wrap', nextRouteName: WrapPage.routeName),
           AppListTile(title: 'Opacity', nextRouteName: OpacityPage.routeName),
+          AppListTile(
+            title: 'FloatingActionButton',
+            nextRouteName: FloatingActionButtonPage.routeName,
+          ),
         ],
       ),
     );
