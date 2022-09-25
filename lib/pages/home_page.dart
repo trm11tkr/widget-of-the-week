@@ -3,6 +3,7 @@ import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
+import 'package:widget_of_the_week/pages/table_page.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
 import 'package:widget_of_the_week/widgets/app_list_tile.dart';
 import 'package:widget_of_the_week/widgets/app_scaffold.dart';
@@ -25,6 +26,7 @@ class HomePage extends StatelessWidget {
             title: 'FloatingActionButton',
             nextRouteName: FloatingActionButtonPage.routeName,
           ),
+          AppListTile(title: 'Table', nextRouteName: TablePage.routeName),
         ],
       ),
     );
