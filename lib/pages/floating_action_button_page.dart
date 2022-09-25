@@ -42,8 +42,10 @@ class _FloatingActionButtonPageState extends State<FloatingActionButtonPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('FAB')),
       body: Center(child: Text(_location[index].toString())),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
         onPressed: () {
           if (index < _location.length - 1) {
             index++;
