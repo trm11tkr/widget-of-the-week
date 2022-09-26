@@ -4,6 +4,7 @@ import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/home_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
+import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/table_page.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
 
@@ -26,6 +27,7 @@ class App extends StatelessWidget {
         FloatingActionButtonPage.routeName: (context) =>
             const FloatingActionButtonPage(),
         TablePage.routeName: (context) => const TablePage(),
+        SliverAppBarPage.routeName: (context) => const SliverAppBarPage(),
       },
     );
   }
