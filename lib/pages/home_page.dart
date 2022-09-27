@@ -4,6 +4,7 @@ import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
+import 'package:widget_of_the_week/pages/sliver_page.dart';
 import 'package:widget_of_the_week/pages/table_page.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
 import 'package:widget_of_the_week/widgets/app_list_tile.dart';
@@ -31,6 +32,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'SliverAppBar',
             nextRouteName: SliverAppBarPage.routeName,
+          ),
+          AppListTile(
+            title: 'SliverList&Grid',
+            nextRouteName: SliverPage.routeName,
           ),
         ],
       ),
