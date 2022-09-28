@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
+import 'package:widget_of_the_week/pages/custom_paint.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
@@ -41,6 +42,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'ClipRRect',
             nextRouteName: ClipRRectPage.routeName,
+          ),
+          AppListTile(
+            title: 'CustomPaint',
+            nextRouteName: CustomPaintPage.routeName,
           ),
         ],
       ),

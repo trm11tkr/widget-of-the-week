@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
+import 'package:widget_of_the_week/pages/custom_paint.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/home_page.dart';
@@ -32,6 +33,7 @@ class App extends StatelessWidget {
         SliverAppBarPage.routeName: (context) => const SliverAppBarPage(),
         SliverPage.routeName: (context) => const SliverPage(),
         ClipRRectPage.routeName: (context) => const ClipRRectPage(),
+        CustomPaintPage.routeName: (context) => const CustomPaintPage(),
       },
     );
   }
