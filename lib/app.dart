@@ -9,6 +9,7 @@ import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
 import 'package:widget_of_the_week/pages/table_page.dart';
+import 'package:widget_of_the_week/pages/tooltip_page.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
 
 class App extends StatelessWidget {
@@ -34,6 +35,7 @@ class App extends StatelessWidget {
         SliverPage.routeName: (context) => const SliverPage(),
         ClipRRectPage.routeName: (context) => const ClipRRectPage(),
         CustomPaintPage.routeName: (context) => const CustomPaintPage(),
+        TooltipPage.routeName: (context) => const TooltipPage(),
       },
     );
   }
