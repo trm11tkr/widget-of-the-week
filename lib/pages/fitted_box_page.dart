@@ -103,8 +103,14 @@ class FittedBoxPage extends StatelessWidget {
           ? Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SingleChildScrollView(child: Row(children: boxListOf50x80)),
-                SingleChildScrollView(child: Row(children: boxListOf80x50)),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: boxListOf50x80),
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: boxListOf80x50),
+                ),
               ],
             )
           : Row(
@@ -133,28 +139,31 @@ class _CustomFittedBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          decoration: BoxDecoration(border: Border.all()),
-          width: 100,
-          height: 100,
-          child: FittedBox(
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: context.isLandscape ? 32 : 0,
+        vertical: context.isLandscape ? 0 : 32,
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            decoration: BoxDecoration(border: Border.all()),
+            width: 100,
+            height: 100,
+            child: FittedBox(
               fit: fit,
               child: Container(
                 height: height,
                 width: width,
                 color: Colors.red,
                 child: Center(child: Text(sizeLabel)),
-              ),),
-        ),
-        Text(fit.toString()),
-        const SizedBox(
-          width: 16,
-          height: 16,
-        )
-      ],
+              ),
+            ),
+          ),
+          Text(fit.toString()),
+        ],
+      ),
     );
   }
 }
