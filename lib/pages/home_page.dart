@@ -8,6 +8,7 @@ import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/fitted_box_page.dart';
 import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
+import 'package:widget_of_the_week/pages/positioned_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
@@ -71,6 +72,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'Align',
             nextRouteName: AlignPage.routeName,
+          ),
+          AppListTile(
+            title: 'Positioned',
+            nextRouteName: PositionedPage.routeName,
           ),
         ],
       ),
