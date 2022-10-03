@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/absorb_pointer_page.dart';
+import 'package:widget_of_the_week/pages/back_drop_filter_page.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
 import 'package:widget_of_the_week/pages/custom_paint.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
@@ -40,6 +41,7 @@ class App extends StatelessWidget {
         TooltipPage.routeName: (context) => const TooltipPage(),
         FittedBoxPage.routeName: (context) => const FittedBoxPage(),
         AbsorbPointerPage.routeName: (context) => const AbsorbPointerPage(),
+        BackDropFilterPage.routeName: (context) => const BackDropFilterPage(),
       },
     );
   }
