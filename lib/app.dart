@@ -16,6 +16,7 @@ import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
 import 'package:widget_of_the_week/pages/table_page.dart';
 import 'package:widget_of_the_week/pages/tooltip_page.dart';
+import 'package:widget_of_the_week/pages/value_listenable_builder_page.dart';
 import 'package:widget_of_the_week/pages/wrap_page.dart';
 
 class App extends StatelessWidget {
@@ -48,6 +49,8 @@ class App extends StatelessWidget {
         AlignPage.routeName: (context) => const AlignPage(),
         PositionedPage.routeName: (context) => const PositionedPage(),
         DismissiblePage.routeName: (context) => const DismissiblePage(),
+        ValueListenableBuilderPage.routeName: (context) =>
+            const ValueListenableBuilderPage(),
       },
     );
   }
