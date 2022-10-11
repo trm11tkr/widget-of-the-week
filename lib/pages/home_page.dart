@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/pages/absorb_pointer_page.dart';
 import 'package:widget_of_the_week/pages/align_page.dart';
+import 'package:widget_of_the_week/pages/aspect_ratio_page.dart';
 import 'package:widget_of_the_week/pages/back_drop_filter_page.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
 import 'package:widget_of_the_week/pages/custom_paint.dart';
@@ -30,7 +31,6 @@ class HomePage extends StatelessWidget {
     return AppScaffold(
       title: 'Home',
       child: ListView(
-        reverse: true,
         children: const [
           AppListTile(title: 'SafeArea', nextRouteName: SafeAreaPage.routeName),
           AppListTile(title: 'Expanded', nextRouteName: ExpandedPage.routeName),
@@ -93,8 +93,15 @@ class HomePage extends StatelessWidget {
             title: 'Draggable',
             nextRouteName: DraggablePage.routeName,
           ),
-          AppListTile(title: 'Spacer', nextRouteName: SpacerPage.routeName,),
-        ],
+          AppListTile(
+            title: 'Spacer',
+            nextRouteName: SpacerPage.routeName,
+          ),
+          AppListTile(
+            title: 'AspectRatio',
+            nextRouteName: AspectRatioPage.routeName,
+          ),
+        ].reversed.toList(),
       ),
     );
   }
