@@ -15,6 +15,7 @@ import 'package:widget_of_the_week/pages/limited_box_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/placeholder_page.dart';
 import 'package:widget_of_the_week/pages/positioned_page.dart';
+import 'package:widget_of_the_week/pages/rich_text_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
@@ -61,6 +62,7 @@ class App extends StatelessWidget {
         AspectRatioPage.routeName: (context) => const AspectRatioPage(),
         LimitedBoxPage.routeName: (context) => const LimitedBoxPage(),
         PlaceHolderPage.routeName: (context) => const PlaceHolderPage(),
+        RichTextPage.routeName: (context) => const RichTextPage(),
       },
     );
   }
