@@ -14,6 +14,7 @@ import 'package:widget_of_the_week/pages/limited_box_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/placeholder_page.dart';
 import 'package:widget_of_the_week/pages/positioned_page.dart';
+import 'package:widget_of_the_week/pages/reorderble_list_view_page.dart';
 import 'package:widget_of_the_week/pages/rich_text_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
@@ -115,6 +116,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'RichText',
             nextRouteName: RichTextPage.routeName,
+          ),
+          AppListTile(
+            title: 'ReorderableListView',
+            nextRouteName: ReorderableListViewPage.routeName,
           ),
         ].reversed.toList(),
       ),
