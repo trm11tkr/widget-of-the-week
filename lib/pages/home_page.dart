@@ -10,6 +10,7 @@ import 'package:widget_of_the_week/pages/draggable_page.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
 import 'package:widget_of_the_week/pages/fitted_box_page.dart';
 import 'package:widget_of_the_week/pages/floating_action_button_page.dart';
+import 'package:widget_of_the_week/pages/indexed_stack_page.dart';
 import 'package:widget_of_the_week/pages/limited_box_page.dart';
 import 'package:widget_of_the_week/pages/opacity_page.dart';
 import 'package:widget_of_the_week/pages/placeholder_page.dart';
@@ -120,6 +121,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'ReorderableListView',
             nextRouteName: ReorderableListViewPage.routeName,
+          ),
+          AppListTile(
+            title: 'IndexedStack',
+            nextRouteName: IndexedStackPage.routeName,
           ),
         ].reversed.toList(),
       ),
