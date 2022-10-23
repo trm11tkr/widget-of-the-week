@@ -4,6 +4,7 @@ import 'package:widget_of_the_week/pages/align_page.dart';
 import 'package:widget_of_the_week/pages/aspect_ratio_page.dart';
 import 'package:widget_of_the_week/pages/back_drop_filter_page.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
+import 'package:widget_of_the_week/pages/constrained_box_page.dart';
 import 'package:widget_of_the_week/pages/custom_paint.dart';
 import 'package:widget_of_the_week/pages/dismissible_page.dart';
 import 'package:widget_of_the_week/pages/draggable_page.dart';
@@ -125,6 +126,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'IndexedStack',
             nextRouteName: IndexedStackPage.routeName,
+          ),
+          AppListTile(
+            title: 'ConstrainedBox',
+            nextRouteName: ConstrainedBoxPage.routeName,
           ),
         ].reversed.toList(),
       ),
