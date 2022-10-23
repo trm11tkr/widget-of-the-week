@@ -77,30 +77,31 @@ class _DataTablePageState extends State<DataTablePage> {
             columns: [
               const DataColumn(label: Text('Name')),
               DataColumn(
-                  label: const Text('Age'),
-                  onSort: (columnIndex, ascending) {
-                    setState(() {
-                      _currentSortColumn = columnIndex;
+                label: const Text('Age'),
+                onSort: (columnIndex, ascending) {
+                  setState(() {
+                    _currentSortColumn = columnIndex;
 
-                      if (_isAscending == true) {
-                        // 昇順にソート
-                        _isAscending = false;
-                        data.sort((a, b) {
-                          final aAge = a['age'] as int;
-                          final bAge = b['age'] as int;
-                          return bAge.compareTo(aAge);
-                        });
-                      } else {
-                        // 昇順にソート
-                        _isAscending = true;
-                        data.sort((a, b) {
-                          final aAge = a['age'] as int;
-                          final bAge = b['age'] as int;
-                          return aAge.compareTo(bAge);
-                        });
-                      }
-                    });
-                  }),
+                    if (_isAscending == true) {
+                      // 昇順にソート
+                      _isAscending = false;
+                      data.sort((a, b) {
+                        final aAge = a['age'] as int;
+                        final bAge = b['age'] as int;
+                        return bAge.compareTo(aAge);
+                      });
+                    } else {
+                      // 昇順にソート
+                      _isAscending = true;
+                      data.sort((a, b) {
+                        final aAge = a['age'] as int;
+                        final bAge = b['age'] as int;
+                        return aAge.compareTo(bAge);
+                      });
+                    }
+                  });
+                },
+              ),
               const DataColumn(label: Text('Student')),
               const DataColumn(label: Text('Gender')),
               const DataColumn(label: Text('Favorite')),
