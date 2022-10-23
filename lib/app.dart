@@ -6,6 +6,7 @@ import 'package:widget_of_the_week/pages/back_drop_filter_page.dart';
 import 'package:widget_of_the_week/pages/clip_r_rect_page.dart';
 import 'package:widget_of_the_week/pages/constrained_box_page.dart';
 import 'package:widget_of_the_week/pages/custom_paint.dart';
+import 'package:widget_of_the_week/pages/data_table_page.dart';
 import 'package:widget_of_the_week/pages/dismissible_page.dart';
 import 'package:widget_of_the_week/pages/draggable_page.dart';
 import 'package:widget_of_the_week/pages/expanded_page.dart';
@@ -70,6 +71,7 @@ class App extends StatelessWidget {
             const ReorderableListViewPage(),
         IndexedStackPage.routeName: (context) => const IndexedStackPage(),
         ConstrainedBoxPage.routeName: (context) => const ConstrainedBoxPage(),
+        DataTablePage.routeName: (context) => const DataTablePage(),
       },
     );
   }
