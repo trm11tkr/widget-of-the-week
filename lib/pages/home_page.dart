@@ -20,6 +20,7 @@ import 'package:widget_of_the_week/pages/positioned_page.dart';
 import 'package:widget_of_the_week/pages/reorderable_list_view_page.dart';
 import 'package:widget_of_the_week/pages/rich_text_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
+import 'package:widget_of_the_week/pages/slider_page.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
 import 'package:widget_of_the_week/pages/spacer_page.dart';
@@ -135,6 +136,10 @@ class HomePage extends StatelessWidget {
           AppListTile(
             title: 'DataTable',
             nextRouteName: DataTablePage.routeName,
+          ),
+          AppListTile(
+            title: 'Slider',
+            nextRouteName: SliderPage.routeName,
           ),
         ].reversed.toList(),
       ),
