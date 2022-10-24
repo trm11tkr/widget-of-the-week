@@ -21,6 +21,7 @@ import 'package:widget_of_the_week/pages/positioned_page.dart';
 import 'package:widget_of_the_week/pages/reorderable_list_view_page.dart';
 import 'package:widget_of_the_week/pages/rich_text_page.dart';
 import 'package:widget_of_the_week/pages/safe_area.dart';
+import 'package:widget_of_the_week/pages/slider_page.dart';
 import 'package:widget_of_the_week/pages/sliver_app_bar_page.dart';
 import 'package:widget_of_the_week/pages/sliver_page.dart';
 import 'package:widget_of_the_week/pages/spacer_page.dart';
@@ -72,6 +73,7 @@ class App extends StatelessWidget {
         IndexedStackPage.routeName: (context) => const IndexedStackPage(),
         ConstrainedBoxPage.routeName: (context) => const ConstrainedBoxPage(),
         DataTablePage.routeName: (context) => const DataTablePage(),
+        SliderPage.routeName: (context) => const SliderPage(),
       },
     );
   }
